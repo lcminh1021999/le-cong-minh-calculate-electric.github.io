@@ -1,0 +1,112 @@
+.form {
+  border: 1px solid green;
+}
+.form h3 {
+  text-align: center;
+  color: blue;
+}
+.form .form-group {
+  display: flex;
+  justify-content: center;
+}
+.form .form-group label {
+  width: 30%;
+  text-align: end;
+  padding-right: 1%;
+}
+.form .form-group input {
+  width: 40%;
+}
+.form .form-group button {
+  width: 40%;
+  margin: 0 10px;
+}
+.form .form-group span {
+  padding-top: 10px;
+  width: 20%;
+  margin-left: 0.5em;
+  color: red;
+  font-size: small;
+}
+
+.content {
+  margin: 10px 0;
+}
+.content .form-group {
+  justify-content: start;
+}
+.content .form-group label {
+  width: 5%;
+  margin: 0 5px;
+}
+.content .form-group select {
+  width: 5%;
+}
+
+.table_content {
+  margin: 10px 0;
+}
+.table_content table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+.table_content table thead tr {
+  background-color: green;
+  text-align: center;
+}
+.table_content table tbody td {
+  text-align: end;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.table_content table tbody td:nth-child(4) {
+  text-align: center;
+}
+.table_content table tbody td:last-child {
+  text-align: center;
+}
+.table_content .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.table_content .pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.table_content .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+.update_form {
+  padding: 30px;
+  border: 1px solid green;
+  position: absolute;
+  top: 5%;
+  z-index: 2;
+  background-color: white;
+}
+.update_form div:last-child {
+  display: flex;
+  justify-content: center;
+}
+.update_form div:last-child button {
+  margin: 5px;
+}
+
+.blur {
+  background-color: gray;
+  opacity: 0.9;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+}/*# sourceMappingURL=calculate.css.map */

@@ -1,0 +1,135 @@
+.form {
+    border: 1px solid green;
+
+    h3 {
+        text-align: center;
+        color: blue;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+
+        label {
+            width: 30%;
+            text-align: end;
+            padding-right: 1%;
+        }
+
+        input {
+            width: 40%;
+        }
+
+        button {
+            width: 40%;
+            margin: 0 10px;
+        }
+        span{
+            padding-top: 10px;
+            width: 20%;
+            margin-left: 0.5em;
+            color: red;
+            font-size: small;
+        }
+    }
+   
+}
+
+.content {
+    margin: 10px 0;
+
+    .form-group {
+        justify-content: start;
+
+        label {
+            width: 5%;
+            margin: 0 5px;
+        }
+
+        select {
+            width: 5%;
+        }
+
+    }
+}
+
+.table_content {
+    margin: 10px 0;
+
+    table{
+        table-layout: fixed;
+        word-wrap: break-word;
+    
+        thead {
+            tr {
+                background-color: green;
+                text-align: center;
+            }
+        }
+    
+        tbody {
+            td {
+                text-align: end;
+                border: 1px solid black;
+                box-sizing: border-box;
+            }
+    
+            td:nth-child(4) {
+                text-align: center;
+            }
+    
+            td:last-child {
+                text-align: center;
+            }
+        }
+    }
+   
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+
+    .pagination a.active {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .pagination a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+.update_form {
+    padding: 30px;
+    border: 1px solid green;
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+    background-color: white;
+    div:last-child{
+        display: flex;
+        justify-content: center;
+        button{
+            margin: 5px;
+        }
+    }
+
+}
+.blur {
+    background-color: gray;
+    opacity: 0.9;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}

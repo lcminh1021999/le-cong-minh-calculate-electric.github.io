@@ -1,0 +1,181 @@
+main {
+  background-image: url(../img/removingbackgroundimages_Unsplash.png);
+  height: 95vh;
+  width: 100vw;
+}
+main .nav {
+  display: flex;
+  width: 100%;
+}
+main .nav .logo {
+  width: 10%;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+main .nav .logo img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 30px 5px #BABABA;
+}
+main .nav .login_box {
+  padding-top: 1%;
+  padding-right: 1%;
+  margin-left: auto;
+}
+main .nav .login_box button {
+  box-shadow: 0px 0px 10px 1px green;
+}
+
+.user_info_box > li {
+  width: 200px;
+  list-style: none;
+}
+
+.user_info_box > li a {
+  text-decoration: none;
+}
+
+.name_user {
+  font-size: x-large;
+}
+
+.sub_menu_1 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+  top: 35px;
+  left: -1px;
+  border-radius: 10px;
+}
+
+.sub_menu_1 li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.user_info_box > li:hover .sub_menu_1 {
+  display: block;
+}
+
+.hidden_login_box {
+  display: none;
+}
+
+.user_info_box {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  background-color: white;
+}
+.user_info_box label {
+  color: red;
+}
+.user_info_box label:hover {
+  color: blue;
+}
+.user_info_box label:hover .logout_hidden {
+  display: block;
+}
+
+.user_info_box:hover + .logout_hidden {
+  display: block;
+}
+
+.logout_hidden {
+  display: none;
+}
+
+.logout {
+  position: absolute;
+  background-color: white;
+  width: 5rem;
+  height: rem;
+  right: 10%;
+  top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_info_box_hidden {
+  display: none;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: aqua;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  margin: 0;
+  font-weight: bolder;
+}
+
+.blur {
+  background-color: gray;
+  opacity: 0.9;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1;
+}
+
+.hidden_login {
+  display: none;
+}
+
+.login_form {
+  width: 30%;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid green;
+  background-color: white;
+  padding: 30px;
+  top: 20%;
+  left: 35%;
+}
+.login_form h3 {
+  margin-top: 0 !important;
+  text-align: center;
+}
+.login_form div:last-child {
+  display: flex;
+  justify-content: center;
+}
+.login_form span {
+  color: red;
+}
+
+.hidden_register {
+  display: none;
+}
+
+.register_form {
+  width: 30%;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid green;
+  background-color: white;
+  padding: 30px;
+  top: 20%;
+  left: 35%;
+}
+.register_form h3 {
+  margin-top: 0 !important;
+  text-align: center;
+}
+.register_form div:last-child {
+  display: flex;
+  justify-content: center;
+}
+.register_form span {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

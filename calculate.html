@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/calculate.css">
+    <title>Document</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <h3><a href="./index.html">Home</a></h3>
+                <div class="form">
+                    <h3>Calculate Bill</h3>
+                    <div class="form-group my-2">
+                        <label for="name">Name</label>
+                        <input id="name" class="form-control" type="text" name="">
+                        <span></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="address">Address</label>
+                        <input id="address" class="form-control" type="text" name="">
+                        <span></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="start">Start</label>
+                        <input id="start" class="form-control" type="text" name="">
+                        <span></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="end">End</label>
+                        <input id="end" class="form-control" type="text" name="">
+                        <span></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="vat">VAT</label>
+                        <input id="vat" class="form-control" type="text" name="">
+                        <span></span>
+                    </div>
+                    <div class="form-group my-2">
+                        <button type="submit" id="insert_data_customer" class="btn btn-success">Calculate</button>
+                        <button type="submit" id="clear_input_insert_form" class="btn btn-danger">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="content">
+                    <h3>Thông tin đã thêm</h3>
+                    <div class="form-group d-flex">
+                        <label for="">Hiển thị</label>
+                        <select class="form-control" id="">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label class="" for="">Record</label>
+                        <a href="./index.html">Trang chu</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="table_content">
+                <table class="table" id="table_data">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>VAT</th>
+                            <th>Button</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>Đà Nẳng</td>
+                            <td>10</td>
+                            <td>50</td>
+                            <td>15%</td>
+                            <td>
+                                <div class="form-group my-2">
+                                    <a v href="#" id="update_table"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a href="#"><i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <!-- <div class="pagination justify-content-center">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div id="hidden" class="hidden">
+                    <div class="blur">
+                    </div>
+                    <div class="update_form">
+                        <h3 class="m-4">Update Calculate Bill</h3>
+                        <input id="index_edit" type="hidden" name="">
+                        <div class="form-group my-2">
+                            <label  for="name">Name</label>
+                            <input id="name_edit" class="form-control" type="text" name="">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="address">Address</label>
+                            <input id="address_edit" class="form-control" type="text" name="">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="start">Start</label>
+                            <input id="start_edit" class="form-control" type="text" name="">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="end">End</label>
+                            <input id="end_edit" class="form-control" type="text" name="">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="vat">VAT</label>
+                            <input id="vat_edit" class="form-control" type="text" name="">
+                        </div>
+                        <div class="form-group my-2">
+                            <button type="submit" id="hidden_update_bill" class="btn btn-danger">Cancel</button>
+                            <button type="submit" id="update_bill" class="btn btn-success">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/library_function.js"></script>
+<script src="./js/calculate.js"></script>
+
+</html
